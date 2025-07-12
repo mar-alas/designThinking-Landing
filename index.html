@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asistente AI de Spotify</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Circular:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --spotify-green: #1ed760;
+      --spotify-black: #121212;
+      --spotify-dark-gray: #282828;
+      --spotify-light-gray: #b3b3b3;
+    }
+
+    body {
+      font-family: 'Circular', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(180deg, var(--spotify-black) 0%, #000000 100%);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    header {
+      background: transparent;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 132px;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #fff, var(--spotify-green));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .content p {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: var(--spotify-light-gray);
+      margin-bottom: 2rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 0;
+      list-style: none;
+      margin: 3rem 0;
+    }
+
+    .features li {
+      background: var(--spotify-dark-gray);
+      padding: 1.5rem;
+      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+
+    .features li:hover {
+      transform: translateY(-5px);
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    }
+
+    img:hover {
+      transform: scale(1.02);
+    }
+
+    .email-signup {
+      background: var(--spotify-dark-gray);
+      padding: 3rem;
+      border-radius: 12px;
+      margin-top: 3rem;
+    }
+
+    .email-signup p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    input[type="email"] {
+      padding: 1rem 1.5rem;
+      width: 300px;
+      border-radius: 500px;
+      border: none;
+      font-size: 1rem;
+      margin-right: 1rem;
+      background: #fff;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      background-color: var(--spotify-green);
+      color: var(--spotify-black);
+      border: none;
+      border-radius: 500px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.04);
+      background-color: #1fdf64;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: var(--spotify-light-gray);
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      input[type="email"] {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="Spotify Logo" class="logo">
+  <h1>Tu asistente inteligente en Spotify</h1>
+</header>
+
+<div class="content">
+  <p>
+    ¿Te cuesta crear playlists o configurar tu cuenta? Ahora Spotify puede ayudarte con un asistente inteligente que entiende lo que necesitás y lo hace por vos.
+  </p>
+
+  <ul class="features">
+    <li>🎵 Crear playlists automáticamente basadas en tu estado de ánimo o actividad</li>
+    <li>👥 Gestionar perfiles y cuentas sin complicaciones</li>
+    <li>⚡ Configuración rápida y personalizada de tu cuenta</li>
+    <li>💬 Interacción natural y simple, sin menús complejos</li>
+  </ul>
+
+  <div class="images">
+    <img src="image2.jpeg" alt="Spotify con asistente - Vista 1" loading="lazy">
+    <img src="image1.png" alt="Spotify con asistente - Vista 2" loading="lazy">
+  </div>
+
+  <div class="email-signup">
+    <p>¿Querés ser de los primeros en probarlo?</p>
+    <input type="email" placeholder="Tu correo aquí" aria-label="Correo electrónico" />
+    <button>Unirme a la lista de espera</button>
+  </div>
+</div>
+
+<footer>
+  No hacemos spam. Solo te avisaremos cuando esta función esté disponible.
+</footer>
+
+</body>
+</html>
+
